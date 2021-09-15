@@ -1,0 +1,7 @@
+{
+  "name": "JMusicBot",
+  "description": "A Discord music bot.",
+  "repository": "https://github.com/iCrazyBlaze/music-bot-heroku/",
+  "logo": "https://github.com/jagrosh/MusicBot/blob/gh-pages/images/logo.png?raw=true",
+  "keywords": ["java", "discord", "bot"]
+}
