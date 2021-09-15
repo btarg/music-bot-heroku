@@ -13,7 +13,7 @@ else
 fi
 
 # Get base64 encoded config from heroku and decode it into a text file
-heroku config:get base64_encoded_config -a basedbeats | base64 -d > config.txt
+echo $base64_encoded_config | base64 -d > config.txt
 
 # Run the jar
 echo "${FILE_NAME}" | xargs java -Dnogui=true -jar
