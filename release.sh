@@ -12,4 +12,8 @@ else
     echo "${FILE_URL}" | xargs wget
 fi
 
+# Get base64 encoded config from heroku and decode it into a text file
+echo heroku config:get base64_encoded_config_txt | base64 -d > config.txt
+
+# Run the jar
 echo "${FILE_NAME}" | xargs java -Dnogui=true -jar
