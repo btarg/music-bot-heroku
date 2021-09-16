@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Get latest version and download if necessary
-FILE_NAME=$(curl -s https://api.github.com/repos/jagrosh/MusicBot/releases/latest | grep -oP '"name": "\K(.*)(?=")')
+FILE_NAME=$(curl -s https://api.github.com/repos/jagrosh/MusicBot/releases/latest | grep -oP '"name": "\K(.*)(?=")' | grep .jar)
 
 # Kill existing JMusicBots to avoid multiple bots running at once
 kill $(jps | grep JMusicBot | awk '{print $1}')
