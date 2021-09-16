@@ -1,8 +1,10 @@
 #!/bin/bash
 
 # Get latest version and download if necessary
-FILE_VER=$(curl -s https://api.github.com/repos/jagrosh/MusicBot/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")')
-FILE_NAME="JMusicBot-${FILE_VER}.jar"
+FILE_NAME=$(curl -s https://api.github.com/repos/jagrosh/MusicBot/releases/latest | grep -oP '"name": "\K(.*)(?=")')
+
+# Kill existing JMusicBots to avoid multiple bots running at once
+kill $(jps | grep JMusicBot | awk '{print $1}')
 
 if [ -f "$FILE_NAME" ]; then
     echo "$FILE_NAME exists."
@@ -23,4 +25,3 @@ else
     # Run the jar
     echo "${FILE_NAME}" | xargs java -Dnogui=true -jar
 fi
-
