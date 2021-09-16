@@ -12,7 +12,7 @@ else
     echo "${FILE_URL}" | xargs wget
 fi
 
-if [ -z "$a" ]
+if [ -z "$base64_encoded_config" ]
 then
     echo "Please define a config following the instructions in the README."
 else 
