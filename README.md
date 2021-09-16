@@ -10,4 +10,5 @@ Then, take your [config.txt file for MusicBot](https://jmusicbot.com/setup#3%EF%
 
 Paste the base64 value into the value box and save your changes. **Your bot should come online shortly after!**
 
-## Please refer to the [Setup Guide](https://github.com/jagrosh/MusicBot/wiki/Setup) for more information!
+## Please refer to [Adding Your Bot](https://jmusicbot.com/adding-your-bot) for how to add your bot to your Discord server.
+## Check [the wiki](https://jmusicbot.com/setup) for more information!
