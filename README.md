@@ -4,9 +4,9 @@ Deploy [jagrosh's Discord music bot](https://github.com/jagrosh/MusicBot/) on He
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/iCrazyBlaze/music-bot-heroku)
 
 # Setup
-Once you have created the app on Heroku, go into **Settings > Config Vars** and add a configuration value called `base64_encoded_config`.
+Once you have created the app on Heroku, go into **Manage app > Settings > Config Vars** and add a configuration value called `base64_encoded_config`.
 
-Then, take your config.txt file for MusicBot and [convert it to base64](https://base64.guru/converter/encode/file).
+Then, take your [config.txt file for MusicBot](https://jmusicbot.com/setup#3%EF%B8%8F%E2%83%A3-edit-the-config-file) and [convert it to base64](https://base64.guru/converter/encode/file).
 
 Paste the base64 value into the value box. **You can now deploy from the main branch!**
 
