@@ -1,4 +1,4 @@
-# JMusicBot on Heroku
+# JMusicBot on Heroku 🎶
 Deploy [jagrosh's Discord music bot](https://github.com/jagrosh/MusicBot/) on Heroku. Click the button below to get started!
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/iCrazyBlaze/music-bot-heroku)
