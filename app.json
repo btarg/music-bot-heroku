@@ -3,5 +3,17 @@
   "description": "A Discord music bot.",
   "repository": "https://github.com/iCrazyBlaze/music-bot-heroku/",
   "logo": "https://github.com/jagrosh/MusicBot/blob/gh-pages/images/logo.png?raw=true",
-  "keywords": ["java", "discord", "bot"]
+  "keywords": [
+    "java",
+    "discord",
+    "bot"
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-pgbouncer"
+    },
+    {
+      "url": "heroku/jvm"
+    }
+  ]
 }
