@@ -12,8 +12,15 @@ else
     echo "${FILE_URL}" | xargs wget
 fi
 
-# Get base64 encoded config from heroku and decode it into a text file
-echo $base64_encoded_config | base64 -d > config.txt
+if [ -z "$a" ]
+then
+    echo "Please define a config following the instructions in the README."
+else 
+    echo "Config defined"
+    # Get base64 encoded config from heroku and decode it into a text file
+    echo $base64_encoded_config | base64 -d > config.txt
 
-# Run the jar
-echo "${FILE_NAME}" | xargs java -Dnogui=true -jar
+    # Run the jar
+    echo "${FILE_NAME}" | xargs java -Dnogui=true -jar
+fi
+
