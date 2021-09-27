@@ -3,6 +3,9 @@ Deploy [jagrosh's Discord music bot](https://github.com/jagrosh/MusicBot/) on He
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/iCrazyBlaze/music-bot-heroku)
 
+# **DISCLAIMER**
+Running the bot on Heroku is not recommended at all if you are running it on multiple servers. The peformance is pretty terrible, and should only really be used as a stop-gap or temporary solution for one server if it's really necessary. See this page for more details: https://jmusicbot.com/hosting
+
 # Setup
 Once you have created the app on Heroku, go into **Manage app > Settings > Config Vars** and add a configuration value called `base64_encoded_config`.
 
